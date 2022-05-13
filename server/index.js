@@ -1,1 +1,10 @@
 // npm init to add the package.json in the project
+const express = require("express");
+
+const PORT = process.env.PORT || 3000;
+
+const app = express();
+
+app.listen(PORT, () => {
+  console.log(`Server listening on ${PORT}`);
+});
